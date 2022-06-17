@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    max-width: 1440px;
+}
+header {
+    padding: 40px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+ul a {
+    color: hsl(179, 100%, 13%);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+    font-size: 2rem;
+}
+
+ul a:hover {
+    border: 1px solid hsl(179, 100%, 13%);
+    border-radius: 10px;
+    background-color: hsl(31, 77%, 52%);
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+}
+h1 {
+    color: hsl(0, 0%, 95%);
+    padding: 20px 0px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+}
+button {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    margin-top: 90px;
+}
+main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40px;
+}
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px;
+    flex: 1;
+    border-radius: 8px 8px 0px 0px;
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px;
+    flex: 1;
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px;
+    flex: 1;
+    border-radius: 0px 0px 8px 8px;
+}
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+/* Desktop View Styles */
+@media screen and (min-width:768px) {
+    main {
+        width: 75%;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        height: 70vh;
+        justify-content: center;
+    }
+    .sedans, .suvs, .luxury {
+        padding: 28px;
+        height: 450px;
+    }
+    .sedans {
+        border-radius: 8px 0px 0px 8px;
+    }
+    .luxury {
+        border-radius: 0px 8px 8px 0px;
+    }
+    button {
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width:900px) {
+    main {
+        width: 78%;
+    }
+    button {
+        margin-top: 100px;
+    }
+}
